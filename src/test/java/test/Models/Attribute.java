@@ -1,10 +1,6 @@
-package test.Atribute;
+package test.Models;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-public class Atribute {
+public class Attribute {
     public String title,url, productName; String productPrice;
 
 
@@ -42,18 +38,13 @@ public class Atribute {
 
 
 
-    public Atribute() {
+    public Attribute() {
     }
 
-    public Atribute(String title,  String productName, String productPrice,String url) {
+    public Attribute(String title, String productName, String productPrice, String url) {
         this.title = title;
         this.url = url;
         this.productName = productName;
         this.productPrice = productPrice;
     }
-
-
-
-
-
 }

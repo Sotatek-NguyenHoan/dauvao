@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef30fb20-ecad-4dd2-80b4-348ae88d7f64" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/Base/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/Base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/CommonPath/EbayPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/CommonPath/LazadaPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/Atribute/Atribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Models/Attribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/Base/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CommonPath/EbayPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CommonPath/LazadaPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/Step/Step.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Atribute/Atribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Base/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CommonPath/EbayPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CommonPath/LazadaPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Step/Step.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/TestClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +33,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -43,11 +66,49 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="test.CommonPath" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="test.Step" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.TestClass.Task">
+    <configuration name="TestClass" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestClass" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.Task (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Test2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestClass" />
+      <option name="METHOD_NAME" value="Task" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestClass.Task" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Test2" />
       <extension name="coverage">
@@ -69,6 +130,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestClass.Task" />
+        <item itemvalue="TestNG.TestClass.Task (1)" />
+        <item itemvalue="TestNG.TestClass" />
       </list>
     </recent_temporary>
   </component>
