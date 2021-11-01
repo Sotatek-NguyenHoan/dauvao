@@ -1,32 +1,36 @@
 package test;
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-import test.Atribute.Atribute;
-import test.CommonPath.EbayPath;
-import test.CommonPath.LazadaPath;
-import test.Step.Step;
+import test.Base.BasePage;
+import test.Models.Attribute;
+import test.Base.BaseTest;
+import test.CommonPath.EbayPage;
+import test.CommonPath.LazadaPage;
 
 import java.util.*;
 
-public class TestClass  extends Step {
+public class TestClass extends BaseTest {
+    WebDriver driver;
+    EbayPage ebayPage;
+    LazadaPage lazadaPage;
     @Test
     public void Task()  {
-        //productebay();
-        //productLazada();
-        List<Atribute> atributeList0=new ArrayList<Atribute>();
-        atributeList0.addAll(productebay());
-        atributeList0.addAll(productLazada());
-        List<Atribute> ebayProduct = sort(atributeList0);
-        for (int i =0; i< ebayProduct.size();i++) {
-             System.out.println(ebayProduct.get(i).getTitle() + " " + ebayProduct.get(i).getUrl() + " " + ebayProduct.get(i).getProductName() + " " + ebayProduct.get(i).getProductPrice());
+        driver=getWebDriver();
+        ebayPage=new EbayPage(driver);
+        lazadaPage=new LazadaPage(driver);
+        List<Attribute> atributeList0=new ArrayList<Attribute>();
+        ebayPage.searchProductOfEbay();
+        ebayPage.getTitleOfEbay();
+        atributeList0.addAll(ebayPage.getProductOfEbay());
+        lazadaPage.searchProductOfLazada();
+        lazadaPage.getTitleOfLazada();
+        atributeList0.addAll(lazadaPage.getProductOfLazada());
+        List<Attribute> product = sort(atributeList0);
+        for (int i =0; i< product.size();i++) {
+             System.out.println(product.get(i).getTitle() + " " + product.get(i).getUrl() + " " + product.get(i).getProductName() + " " + product.get(i).getProductPrice());
         }
-
     }
+
 }
